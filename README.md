@@ -28,8 +28,9 @@ Database ORM
 pip install SQLAlchemy
 ```
 
-Testes
+Tests
 
 ```bash
 pip install -U pytest
+pytest -s -v
 ```

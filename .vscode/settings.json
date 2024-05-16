@@ -5,13 +5,9 @@
       "source.organizeImports.ruff": "explicit"
     },
     "python.testing.pytestEnabled": true,
-    "sqltools.useNodeRuntime": true,
-    "sqltools.connections": [
-      {
-        "previewLimit": 50,
-        "driver": "SQLite",
-        "database": "${workspaceFolder:python-design-system}/storage.db",
-        "name": "Local"
-      }
-    ]
+    "files.exclude": {
+      "**/*.pyc": { "when": "$(basename).py"},
+      "**/__pycache__": true,
+      "**/*.pytest_cache": true,
+    }    
   }
